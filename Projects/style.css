@@ -1,0 +1,188 @@
+body {
+	margin: 0;
+	text-align: center;
+	font-family: 'Red Hat Text', sans-serif;
+	background-image: url(Assets/BG1.jpg);
+}
+
+header {
+	height: 180px;
+	padding: 0 30px;
+}
+
+#header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#lista {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style: none;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.lista-item {
+	padding: 10px;
+	transition: transform 0.5s;
+}
+
+.lista-item:hover {
+	text-decoration: underline;
+	transform: translateY(-5px);
+}
+
+#sidebar {
+	height: 100%;
+	width: 0;
+	overflow-x: hidden;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: #FFF;
+	color: #111;
+	transition: 0.5s;
+  	padding-top: 60px;
+  	text-align: left;
+}
+
+#sidebar-title {
+	padding: 0 0 0 30px;
+	border-top: 1px solid gray;
+}
+
+.sidebar-link {
+	text-decoration: none;
+}
+
+#list {
+	list-style: none;
+	padding: 0 0 0 30px;
+}
+
+#list-social {
+	padding: 20px 0;
+}
+
+#btn {
+	text-align: right;
+	padding: 0 30px;
+}
+
+.openbtn {
+	cursor: pointer;
+}
+
+.list-item {
+	text-decoration: none;
+	color: #111;
+	font-family: 'Roboto';
+	font-size: 20px;
+}
+
+#content {
+	margin-bottom: 200px;
+}
+
+#projects-wrapper {
+	text-align: left;
+	padding: 0 30px;
+}
+
+.projects-row {
+	display: flex;
+  	flex-wrap: nowrap;
+  	overflow-x: auto;
+  	height: 250px;
+  	overflow-y: hidden;
+  	margin-bottom: 80px;
+}
+
+.project-section-title {
+	font-size: 12px;
+}
+
+.project-box {
+	flex: 0 0 auto;
+	width: 250px;
+	padding-top: 10px;
+	border-top: 1px solid gray;
+	margin-right: 20px;
+}
+
+.project-title {
+	margin: 0px;
+	font-size: 16px;
+}
+
+.project-location {
+	margin-top: 0;
+	font-size: 16px;
+	color: gray;
+}
+
+.img-wrap {
+	width: 100%;
+	height: 100%;
+}
+
+.project-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: opacity 0.5s;
+}
+
+.project-img:hover {
+	opacity: 0.5;
+}
+
+#footer {
+	font-family: 'Roboto', sans-serif;
+	padding: 0 36px;
+	height: 100px;
+}
+
+#footer-content {
+	border-top: 1px solid gray;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-text {
+	font-size: 16px;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+  	flex-direction: column;
+  	height: auto;
+  }
+
+  #lista {
+  	flex-direction: column;
+  }
+
+  .lista-item {
+  	padding: 10px 0;
+  }
+
+  .projects-row {
+  	height: 350px;
+	}
+
+  .project-box {
+	width: 90%;
+}
+}

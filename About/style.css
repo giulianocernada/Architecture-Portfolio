@@ -1,0 +1,340 @@
+body {
+	margin: 0;
+	text-align: center;
+	font-family: 'Red Hat Text', sans-serif;
+}
+
+header {
+	height: 180px;
+/*	padding: 0 30px;*/
+	background: transparent;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 5px black;
+}
+
+#header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 999;
+}
+
+.navbar-toggle {
+	display: none;
+}
+
+#header-title {
+	margin-left: 30px;
+}
+
+#lista {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	margin-right: 30px;
+}
+
+a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+p {
+	margin: 0;
+}
+
+#sidebar {
+	height: 100%;
+	width: 0;
+	overflow-x: hidden;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: #FFF;
+	color: #111;
+	transition: 0.5s;
+  	padding-top: 60px;
+  	text-align: left;
+  	z-index: 999;
+}
+
+#bio-sidebar {
+	height: 100%;
+	width: 0;
+	overflow-x: hidden;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #FFF;
+	color: #111;
+	transition: 1s;
+  	padding-top: 60px;
+  	text-align: left;
+  	z-index: 999;
+}
+
+.bio-text {
+	text-align: left;
+	padding: 0 30px;
+	margin-top: 50px;
+}
+
+#sidebar-title {
+	padding: 0 0 0 30px;
+	border-top: 1px solid gray;
+}
+
+.sidebar-link {
+	text-decoration: none;
+}
+
+#list {
+	list-style: none;
+	padding: 0 0 0 30px;
+}
+
+#list-social {
+	padding: 20px 0;
+}
+
+#btn {
+	text-align: right;
+	padding: 0 30px;
+}
+
+.openbtn {
+	cursor: pointer;
+}
+
+.closebtn {
+	cursor: pointer;
+}
+
+.list-item {
+	text-decoration: none;
+	color: #111;
+	font-family: 'Roboto';
+	font-size: 20px;
+}
+
+.lista-item {
+	padding: 10px;
+	transition: transform 0.5s;
+}
+
+.lista-item:hover {
+	text-decoration: underline;
+	transform: translateY(-5px);
+}
+
+#banner {
+	height: 85vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+#banner-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#project-wrap {
+	padding-top: 85vh;
+}
+
+#project-info {
+	background-color: #FFFFFF;
+	position: relative;
+}
+
+#project-block {
+	padding-top: 50px;
+}
+
+#project-row {
+	display: flex;
+	padding-bottom: 100px;
+	padding: 0 30px;
+}
+
+#info-tag {
+	font-size: 25px;
+}
+
+#project-title {
+	font-size: 25px;
+}
+
+#project-right-col {
+	margin-left: 33.33%;
+	text-align: left;
+}
+
+#project-description {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#about-middle {
+	width: 100%;
+	height: 100vh;
+	padding-bottom: 100px;
+}
+
+#about-middle-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#gc-container {
+	width: 100%;
+}
+
+#gc-c-2 {
+	margin: 0 30px;
+	border-top: 1px solid gray;
+}
+
+#gc-section-title {
+	text-align: left;
+}
+
+#gc-block {
+	display: flex;
+	width: 100%;
+	height: 60vh;
+	flex-direction: row;
+	padding: 100px 0;
+
+}
+
+#bio-title {
+	margin: 0;
+}
+
+#bio-epi {
+	margin: 0;
+	padding-bottom: 50px;
+	color: #111;
+	font-family: 'Roboto';
+}
+
+#left-col {
+	width: 40%;
+	text-align: left;
+}
+
+#right-col {
+	width: 60%;
+}
+
+#gc-img {
+	width: 90%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#footer {
+	font-family: 'Roboto', sans-serif;
+	padding: 0 36px;
+	height: 100px;
+}
+
+#footer-content {
+	border-top: 1px solid gray;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-text {
+	font-size: 16px;
+	color: #000000;
+}
+
+@media only screen and (max-width: 1024px) {
+  #header {
+  	height: auto;
+  	display: flex;
+  	flex-direction: column;
+  	text-align: left;
+  }
+
+  #header-title {
+  	text-align: left;
+  	width: 100%;
+  	margin: 10px 0;
+  }
+
+  #nav-tog {
+  	width: 100%;
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  }
+
+  #lista {
+  	flex-direction: row;
+  	flex-wrap: wrap;
+  }
+
+
+  .navbar-toggle {
+  	display: initial;
+  	cursor: pointer;
+  	font-size: 24px;
+  }
+
+  #project-row {
+  	flex-direction: column;
+  	justify-content: center;
+  }
+
+  #project-tag {
+  	display: none;
+  }
+
+  #project-right-col {
+	margin: 0;
+}
+  
+  #gc-block {
+  	display: flex;
+  	flex-direction: column;
+  	padding: 0 0 150px 0;
+  }
+
+  #left-col {
+  	width: 100%;
+  }
+
+  #right-col {
+  	width: 100%;
+  }
+
+  #bio-epi {
+  	padding-bottom: 20px;
+  }
+
+  #gc-img {
+  	padding: 20px 0;
+  	width: 100%;
+  	object-fit: cover;
+  }
+
+}
+
